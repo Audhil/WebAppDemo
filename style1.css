@@ -1,0 +1,43 @@
+/* option2 - to use font; using import & selector(shown below)
+no need to add link in index.html file
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* option1 - to use font; using link & selector(shown below) */
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+#headline {
+  color: violet;
+  background-color: green;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  border: solid 5px #08ff04;
+  border-radius: 20px;
+  /* width: 300px; */
+  height: 400px;
+  /* rem, em, vh, vw - units for better usages */
+  width: 50%;
+  height: 10em;
+}
+
+.container1 {
+  margin: 30px;
+  padding: 30px;
+  /* width: 800px; */
+  width: 75vw;
+}
+
+.headline2 {
+  display: inline;
+}
+
+.paragraph {
+  display: inline;
+}

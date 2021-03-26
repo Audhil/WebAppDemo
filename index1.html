@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Basics</title>
+
+  <!-- option2 & option3 -->
+  <style>
+    /* option2 */
+    .myclass {
+      color: red;
+    }
+
+    /* option3 */
+    #myId {
+      color: green;
+    }
+
+    /* overring inlining style; someclass WINS */
+    .someclass {
+      color: red !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+
+<!-- option1 - to use font; using link & selector -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+  <!-- option 1 (inlining CSS)-->
+  <h1 style="color: #872738">CSS Basics - option1</h1>
+  <p>Let's learn it together</p>
+
+  <!-- option 2 (with class & declaring Style above)-->
+  <h1 class="myclass">CSS Basics - option2</h1>
+  <p class="myclass">Let's learn it together</p>
+
+  <!-- option 3 (with id & declaring Style above)-->
+  <h1 id="myId">CSS Basics - option3</h1>
+  <p>Let's learn it together</p>
+
+  <!-- overriding external declared style; inlining wins -->
+  <h1 class="myclass" style="color: orange;">Inlining powerful than other?</h1>
+
+  <!-- overring inlining style; someclass WINS -->
+  <h1 class="someclass" style="color: orange;">Here Inlining is not powerful than other, it fails!</h1>
+
+  <!-- refer style.css file -->
+  <div class="container1">
+    <h1 id="headline">Let's declare style in separate file</h1>
+    <p>This is the best practice, and improves readability!</p>
+
+    <h1 class="headline2">Hello World!</h1>
+    <p class="paragraph">some random paragraphparagraphparagraphparagraphparagraphparagraphparagraph paragraph</p>
+  </div>
+
+  window
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.card {
+  width: 18rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: .5rem;
+  background-color: #202020;
+  overflow: hidden;
+}
+
+.card-top-section {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #08ff04;
+}
+
+.card-mid-section {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.card-mid-section h2 {
+  color: white;
+}
+
+.card-mid-section p {
+  color: #eeeeee;
+}
+
+.card-btn-section {
+  padding: 1rem 2rem;
+}
+
+.contact-btn {
+  background-color: orange;
+  padding: 0.8rem 2rem;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.contact-btn:hover {
+  background-color: #08ff04;
+}
