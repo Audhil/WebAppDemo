@@ -1,0 +1,75 @@
+.grid-container {
+  height: 100%;
+  display: grid;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* grid-template-columns: 200px 200px 400px; */
+  /* fraction */
+  /* grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr; */
+  grid-template-areas:
+    /**/
+    "header header header"
+    /**/
+    "sidebar content content"
+    /**/
+    "sidebar content content"
+    /**/
+    "footer footer footer";
+  /**/
+  /* gap: 20px; */
+  /* gap: 20px 0px; */
+  /* for horizontal */
+  /* justify-items: flex-start; */
+  /* justify-items: flex-end; */
+  /* justify-items: center; */
+  justify-items: stretch;
+  /* default */
+  /* for vertical  */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  align-items: stretch;
+  /* default */
+  /* justify-content: center; */
+  /* justify horizontally, when width: 700px; grid-template-columns: 200px 200px 400px;*/
+  /* align-content: center; */
+  /*justify vertically, when height 800px; grid-template-rows: 100px 200px 200px 100px;*/
+  /* grid-auto-flow: column; */
+}
+
+.header {
+  grid-area: header;
+  background-color: greenyellow;
+}
+
+.content {
+  grid-area: content;
+  background-color: red;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: royalblue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: violet;
+}
+
+.grid-container * {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.new-item {
+  grid-area: 5 / 1 / 5 / span 3;
+  background-color: orange;
+  /* justify-self: center;
+  align-self: center; */
+}
